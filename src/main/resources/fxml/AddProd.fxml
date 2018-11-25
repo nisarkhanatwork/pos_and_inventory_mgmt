@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ralab.pos.AddProductController">
+   <children>
+      <VBox layoutX="-1.0" layoutY="2.0" prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="47.0" prefWidth="297.0" text="ADD/MODIFY PRODUCT" underline="true">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="creat_mfg_btn" mnemonicParsing="false" onAction="#handleCreateMfgButtonAction" prefHeight="25.0" prefWidth="58.0" text="MFG">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Button>
+                  <TextField fx:id="creat_mfg_txt" prefHeight="25.0" prefWidth="140.0" />
+                  <Separator orientation="VERTICAL" prefHeight="41.0" prefWidth="22.0">
+                     <HBox.margin>
+                        <Insets left="137.0" />
+                     </HBox.margin></Separator>
+                  <ComboBox fx:id="creat_mfg_cmb" onAction="#handleCreateMfgComboBoxAction" prefHeight="25.0" prefWidth="152.0" promptText="....">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList" />
+                     </items>
+                  </ComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="creat_prod_btn" mnemonicParsing="false" onAction="#handleCreateProdButtonAction" prefHeight="25.0" prefWidth="58.0" text="PROD">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Button>
+                  <TextField fx:id="creat_prod_txt" prefHeight="25.0" prefWidth="277.0" />
+                  <Separator orientation="VERTICAL" prefHeight="43.0" prefWidth="22.0" />
+                  <ComboBox fx:id="creat_prod_cmb" onAction="#handleCreateProdComboBoxAction" prefHeight="25.0" prefWidth="212.0" promptText="....">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList" />
+                     </items>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="creat_units_btn" mnemonicParsing="false" onAction="#handleCreateUnitsButtonAction" prefHeight="25.0" prefWidth="58.0" text="UNITS">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Button>
+                  <TextField fx:id="creat_units_txt" prefHeight="25.0" prefWidth="140.0" />
+                  <Separator orientation="VERTICAL" prefHeight="43.0" prefWidth="22.0">
+                     <HBox.margin>
+                        <Insets left="137.0" />
+                     </HBox.margin></Separator>
+                  <ComboBox fx:id="creat_units_cmb" onAction="#handleCreateUnitsComboBoxAction" prefHeight="25.0" prefWidth="99.0" promptText="....">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList" />
+                     </items>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="12.0" prefWidth="600.0">
+               <children>
+                  <Separator prefHeight="0.0" prefWidth="591.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="24.0" prefWidth="55.0" text="PRICE: " textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="creat_price_txt" prefHeight="25.0" prefWidth="97.0" />
+                  <Label alignment="CENTER" prefHeight="24.0" prefWidth="95.0" text="LOW WARN: " textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="creat_low_warn_txt" prefHeight="25.0" prefWidth="97.0" />
+                  <Label alignment="CENTER" prefHeight="24.0" prefWidth="103.0" text="PROD CODE: " textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="creat_prod_code_txt" prefHeight="25.0" prefWidth="97.0" />
+               </children></HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="24.0" prefWidth="39.0" text="GST: " textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="27.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="creat_gst_txt" prefHeight="25.0" prefWidth="97.0" />
+                  <Label prefHeight="24.0" prefWidth="88.0" text="HSN CODE: " textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="24.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="creat_hsn_code_txt" prefHeight="25.0" prefWidth="97.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="14.0" prefWidth="600.0">
+               <children>
+                  <Separator prefHeight="0.0" prefWidth="591.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="creat_add_modify_btn11" mnemonicParsing="false" onAction="#handleCreateAddModifyButtonAction" prefHeight="35.0" prefWidth="148.0" text="ADD/MODIFY PROD" />
+                  <Button fx:id="creat_del_btn" mnemonicParsing="false" onAction="#handleDELETEPRODButtonAction" prefHeight="35.0" prefWidth="148.0" text="DELETE PROD">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

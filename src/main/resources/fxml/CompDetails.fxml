@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ralab.pos.CompDetailsController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="1100.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="190.0" text="COMPANY DETAILS" underline="true">
+               <font>
+                  <Font name="Ubuntu Mono" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="37.0" prefHeight="36.0" prefWidth="1100.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="192.0" text="TERMS AND CONDITIONS" underline="true">
+               <font>
+                  <Font name="Ubuntu Mono" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="343.0" prefHeight="18.0" prefWidth="1100.0" />
+      <HBox alignment="CENTER_LEFT" layoutY="361.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutY="406.0" prefHeight="45.0" prefWidth="1100.0" />
+      <HBox alignment="CENTER" layoutY="451.0" prefHeight="45.0" prefWidth="1100.0" />
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="316.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="5.0" layoutY="248.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="5.0" layoutY="203.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <children>
+            <Label prefHeight="25.0" prefWidth="77.0" text="Bank Name">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="bank_name" prefHeight="25.0" prefWidth="194.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label prefHeight="25.0" prefWidth="49.0" text="Branch">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="branch" prefHeight="25.0" prefWidth="153.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label prefHeight="25.0" prefWidth="58.0" text="Acc No.">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="acc_no" prefHeight="25.0" prefWidth="172.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label prefHeight="25.0" prefWidth="32.0" text="IFSC">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="ifsc" prefHeight="25.0" prefWidth="154.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="158.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <children>
+            <Label prefHeight="34.0" prefWidth="120.0" text="BANK DETAILS" underline="true">
+               <font>
+                  <Font name="Ubuntu Mono" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutY="113.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <children>
+            <Label prefHeight="25.0" prefWidth="49.0" text="Term3">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="17.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="term3" prefHeight="25.0" prefWidth="418.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="5.0" layoutY="68.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <children>
+            <Label prefHeight="25.0" prefWidth="49.0" text="Term1">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></Label>
+            <TextField fx:id="term1" prefHeight="25.0" prefWidth="418.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label prefHeight="25.0" prefWidth="49.0" text="Term2">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="term2" prefHeight="25.0" prefWidth="418.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="5.0" layoutY="282.0" prefHeight="34.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleSaveButtonAction" text="SAVE" />
+         </children>
+      </HBox>
+   </children>
+</Pane>

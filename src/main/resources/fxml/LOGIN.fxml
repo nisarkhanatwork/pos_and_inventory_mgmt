@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="LOGIN" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="85.0" layoutY="72.0" prefHeight="39.0" prefWidth="152.0" text="LOGIN NAME">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="141.0" prefHeight="39.0" prefWidth="152.0" text="PASSWORD">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField layoutX="287.0" layoutY="73.0" prefHeight="37.0" prefWidth="155.0" />
+            <PasswordField layoutX="287.0" layoutY="143.0" prefHeight="35.0" prefWidth="155.0" />
+            <Label layoutX="84.0" layoutY="14.0" prefHeight="39.0" prefWidth="430.0" text="DADA ENTERPRISES SHOP SOFTWARE" underline="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button layoutX="185.0" layoutY="247.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="102.0" text="OK">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="314.0" layoutY="247.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="102.0" text="CANCEL">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</TitledPane>

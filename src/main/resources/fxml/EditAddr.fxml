@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ralab.pos.EditAddrController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="119.0" text="EDIT ADDRESS" underline="true">
+               <font>
+                  <Font name="Ubuntu Mono" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutY="36.0" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="59.0" text="TOWN: ">
+               <font>
+                  <Font name="Ubuntu Mono" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="town" prefHeight="25.0" prefWidth="194.0">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutY="76.0" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="120.0" text="PARTY NAME: ">
+               <font>
+                  <Font name="Ubuntu Mono" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="pname" prefHeight="25.0" prefWidth="194.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="-1.0" layoutY="114.0" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="109.0" text="ADDRESS 1: ">
+               <font>
+                  <Font name="Ubuntu Mono" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="addr1" prefHeight="25.0" prefWidth="280.0">
+               <HBox.margin>
+                  <Insets left="12.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutY="154.0" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="109.0" text="ADDRESS 1: ">
+               <font>
+                  <Font name="Ubuntu Mono" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="addr2" prefHeight="25.0" prefWidth="280.0">
+               <HBox.margin>
+                  <Insets left="12.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutY="194.0" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="59.0" text="CELL: ">
+               <font>
+                  <Font name="Ubuntu Mono" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="cell" prefHeight="25.0" prefWidth="280.0">
+               <HBox.margin>
+                  <Insets left="62.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="-1.0" layoutY="232.0" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="73.0" text="GSTIN: ">
+               <font>
+                  <Font name="Ubuntu Mono" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="gstin" prefHeight="25.0" prefWidth="194.0">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="1.0" layoutY="273.0" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="80.0" text="CLIMIT: ">
+               <font>
+                  <Font name="Ubuntu Mono" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="climit" prefHeight="25.0" prefWidth="280.0">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutY="313.0" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="49.0" text="PDC: ">
+               <font>
+                  <Font name="Ubuntu Mono" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="pdc" prefHeight="25.0" prefWidth="280.0">
+               <HBox.margin>
+                  <Insets left="72.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="1.0" layoutY="353.0" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="36.0" prefWidth="39.0" text="BK: ">
+                     <font>
+                        <Font name="Ubuntu Mono" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="bk" prefHeight="25.0" prefWidth="280.0">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="-1.0" layoutY="393.0" prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="49.0" text="TPT: ">
+               <font>
+                  <Font name="Ubuntu Mono" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="tpt" prefHeight="25.0" prefWidth="280.0">
+               <HBox.margin>
+                  <Insets left="72.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="-3.0" layoutY="418.0" prefHeight="46.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleSaveButtonAction" prefHeight="17.0" prefWidth="100.0" text="SAVE">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</Pane>

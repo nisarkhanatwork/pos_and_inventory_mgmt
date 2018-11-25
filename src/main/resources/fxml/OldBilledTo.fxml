@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ralab.pos.OldBilledToController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="1100.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="674.0" text="CHOOSE BILLED-TO FROM ADDRESS BOOK" underline="true">
+               <font>
+                  <Font name="Ubuntu Mono" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="37.0" prefHeight="306.0" prefWidth="1100.0">
+         <children>
+            <TableView fx:id="addr_book2" prefHeight="200.0" prefWidth="1100.0">
+                    <columns>
+                        <TableColumn prefWidth="64.0" text="SNO">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="sNo" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="0.0" prefWidth="119.0" text="TOWN">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="town" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="117.0" text="PARTY NAME">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="pName" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="116.0" text="ADDRESS1">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="addr1" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="116.0" text="ADDRESS2">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="addr2" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="73.0" text="PHONE">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="phone" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="130.0" text="TIN">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tin" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="78.0" text="CLIMIT">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="cLimit" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="87.0" text="PDC">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="pdc" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="97.0" text="BK">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="bk" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="102.0" text="TPT">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tpt" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="343.0" prefHeight="18.0" prefWidth="1100.0" />
+      <HBox alignment="CENTER" layoutY="361.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleChooseCustomerButtonAction" prefHeight="34.0" prefWidth="215.0" text="CHOOSE CUSTOMER">
+               <font>
+                  <Font name="Ubuntu Mono" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutY="406.0" prefHeight="45.0" prefWidth="1100.0" />
+      <HBox alignment="CENTER" layoutY="451.0" prefHeight="45.0" prefWidth="1100.0" />
+   </children>
+</Pane>

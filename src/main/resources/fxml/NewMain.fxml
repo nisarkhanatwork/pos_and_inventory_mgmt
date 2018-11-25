@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ralab.pos.MainController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="300.0" prefWidth="550.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="24.0" prefWidth="151.0" text="SALES" underline="true">
+               <font>
+                  <Font name="Ubuntu Mono" size="40.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="billing_btn" alignment="CENTER" mnemonicParsing="false" onAction="#handleBILLINGButtonAction" prefHeight="40.0" prefWidth="196.0" text="BILLING">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="returns_btn" mnemonicParsing="false" onAction="#handleRETURNSButtonAction" prefHeight="40.0" prefWidth="196.0" text="RETURNS">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="add_cust_btn" mnemonicParsing="false" onAction="#handleAddCustomerButtonAction" prefHeight="40.0" prefWidth="196.0" text="ADDRESS BOOK">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutY="300.0" prefHeight="350.0" prefWidth="550.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="24.0" prefWidth="151.0" text="REPORTS" underline="true">
+               <font>
+                  <Font name="Ubuntu Mono" size="40.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="rep_btn" mnemonicParsing="false" onAction="#handleREPORTSButtonAction" prefHeight="40.0" prefWidth="196.0" text="ITEM/CUST WISE">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="stk_stat_btn" mnemonicParsing="false" onAction="#handleSTOCKButtonAction" prefHeight="40.0" prefWidth="196.0" text="STOCK STATUS">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="prod_code_btn" mnemonicParsing="false" onAction="#handlePRODCODEButtonAction" prefHeight="40.0" prefWidth="196.0" text="PROD CODE LIST">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="550.0" prefHeight="300.0" prefWidth="550.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="24.0" prefWidth="151.0" text="STOCK" underline="true">
+               <font>
+                  <Font name="Ubuntu Mono" size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="add_prod_btn" mnemonicParsing="false" onAction="#handleADDPRODUCTButtonAction" prefHeight="40.0" prefWidth="196.0" text="ADD PRODUCT">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="pur_btn" mnemonicParsing="false" onAction="#handlePURCHASEButtonAction" prefHeight="40.0" prefWidth="196.0" text="PURCHASE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="552.0" layoutY="300.0" prefHeight="350.0" prefWidth="550.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="24.0" prefWidth="151.0" text="OTHER" underline="true">
+               <font>
+                  <Font name="Ubuntu Mono" size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="bkp_btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleBACKUPButtonAction" prefHeight="40.0" prefWidth="196.0" text="BACKUP">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="load_data_btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleLOADDATAButtonAction" prefHeight="40.0" prefWidth="196.0" text="LOAD DATA">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="comp_details_btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleCOMPDETAILSButtonAction" prefHeight="40.0" prefWidth="196.0" text="COMPANY DETAILS">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="admin_btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleADMINButtonAction" prefHeight="40.0" prefWidth="196.0" text="ADMIN">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>

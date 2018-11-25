@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import com.ralab.pos.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ralab.pos.FXMLReturnsController">
+   <children>
+      <VBox layoutX="6.0" prefHeight="700.0" prefWidth="1100.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="67.0" prefWidth="800.0">
+               <children>
+                  <Label fx:id="title" alignment="CENTER" prefHeight="54.0" prefWidth="680.0" underline="true">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="1100.0">
+               <children>
+                  <Label prefHeight="39.0" prefWidth="124.0" text="ITEM DETAILS" underline="true">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="1600.0">
+               <children>
+                  <Label alignment="center_right" prefWidth="70" text="DATE:" />
+                  <DatePicker fx:id="ret_date" editable="false" onAction="#handleDatePickerAction" />
+                  <Label alignment="center_right" prefWidth="70" text="TIME:" />
+                  <TextField fx:id="ret_time" editable="false" promptText="Bill time" />
+                  <Label alignment="center_right" prefWidth="70" text="BILL NO.:" />
+                  <ComboBox fx:id="ret_bill_no" onAction="#handleBillNoComboBoxAction" prefWidth="80" promptText="....">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList" />
+                     </items>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="1600.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="106.0" text="CUSTOMER ID:  " />
+                  <TextField fx:id="ret_phone_num" prefHeight="25.0" prefWidth="126.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="267.0" prefWidth="1100.0">
+               <children>
+                  <TableView fx:id="ret_billView" prefHeight="320.0" prefWidth="886.0">
+                    <columns>
+                      <TableColumn prefWidth="93.0" text="SNO">
+                          <cellValueFactory>
+                                        <PropertyValueFactory property="serialNo" />
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn prefWidth="75.0" text="MFG">
+                            <cellValueFactory>
+                                        <PropertyValueFactory property="mfgName" />
+                          </cellValueFactory>
+                      </TableColumn> 
+                        <TableColumn prefWidth="289.0" text="PRODUCT">
+                            <cellValueFactory>
+                                        <PropertyValueFactory property="prodName" />
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn prefWidth="58.0" text="PCODE">
+                            <cellValueFactory>
+                                        <PropertyValueFactory property="prodCode" />
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn prefWidth="39.0" text="HSN">
+                            <cellValueFactory>
+                                        <PropertyValueFactory property="hsnCode" />
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn prefWidth="42.0" text="GST">
+                            <cellValueFactory>
+                                        <PropertyValueFactory property="cgst" />
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn fx:id="quant_col" prefWidth="60.0" text="QUANT">
+                            <cellValueFactory>
+                                        <PropertyValueFactory property="quantValue" />
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn prefWidth="56.0" text="UNITS">
+                            <cellValueFactory>
+                                        <PropertyValueFactory property="unitsValue" />
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn fx:id="rate_col" prefWidth="45.0" text="RATE">
+                            <cellValueFactory>
+                                        <PropertyValueFactory property="rateValue" />
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn prefWidth="123.0" text="AMOUNT">
+                            <cellValueFactory>
+                                        <PropertyValueFactory property="amountValue" />
+                          </cellValueFactory>
+                      </TableColumn>
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="1600.0">
+               <children>
+                  <Button fx:id="ret_ok" mnemonicParsing="false" onAction="#handleOKButtonAction" prefHeight="25.0" prefWidth="150.0" text="CANCEL BILL" />
+                  <Button mnemonicParsing="false" onAction="#handleCancelButtonAction" prefHeight="25.0" prefWidth="150.0" text="DO NOT CANCEL">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

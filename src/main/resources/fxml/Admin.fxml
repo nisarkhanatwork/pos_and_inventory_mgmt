@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ralab.pos.AdminController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="1100.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="282.0" text="ADMINISTRATIVE ACTIONS" underline="true">
+               <font>
+                  <Font name="Ubuntu Mono" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="37.0" prefHeight="36.0" prefWidth="1100.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="140.0" text="DATABASE IP" underline="true">
+               <font>
+                  <Font name="Ubuntu Mono" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="343.0" prefHeight="18.0" prefWidth="1100.0" />
+      <HBox alignment="CENTER_LEFT" layoutY="361.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutY="406.0" prefHeight="45.0" prefWidth="1100.0" />
+      <HBox alignment="CENTER" layoutY="451.0" prefHeight="45.0" prefWidth="1100.0" />
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="316.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="5.0" layoutY="248.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="5.0" layoutY="203.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="158.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleResetBillNoAction" prefHeight="24.0" prefWidth="82.0" text="RESET">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="113.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <children>
+            <Label prefHeight="34.0" prefWidth="217.0" text="RESET BILL NUMBER" underline="true">
+               <font>
+                  <Font name="Ubuntu Mono" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="5.0" layoutY="68.0" prefHeight="45.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <children>
+            <Label prefHeight="25.0" prefWidth="14.0" text="IP">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Label>
+            <TextField fx:id="ip_addr" prefHeight="25.0" prefWidth="147.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="5.0" layoutY="282.0" prefHeight="34.0" prefWidth="1100.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</Pane>

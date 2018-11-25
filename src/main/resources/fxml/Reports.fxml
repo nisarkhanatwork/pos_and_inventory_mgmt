@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ralab.pos.ReportsController">
+   <children>
+      <HBox alignment="CENTER" layoutX="-5.0" prefHeight="100.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="43.0" prefWidth="535.0" text="REPORTS" underline="true">
+               <font>
+                  <Font name="Ubuntu Mono" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="6.0" layoutY="98.0" prefHeight="48.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="43.0" prefWidth="82.0" text="From Date:">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></Label>
+            <DatePicker fx:id="day1" prefHeight="25.0" prefWidth="120.0" />
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="43.0" prefWidth="66.0" text="To Date:">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></Label>
+            <DatePicker fx:id="day2" prefHeight="25.0" prefWidth="120.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="2.0" layoutY="218.0" prefHeight="100.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleGENERATEButtonAction" prefHeight="25.0" prefWidth="158.0" text="GENERATE">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="6.0" layoutY="163.0" prefHeight="48.0" prefWidth="600.0">
+         <children>
+            <RadioButton fx:id="ic_report" mnemonicParsing="false" text="ITEM/CUST WISE">
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="sales_report" layoutX="258.0" layoutY="25.0" mnemonicParsing="false" text="SALES">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="lr_report" mnemonicParsing="false" text="LR">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </RadioButton>
+         </children>
+      </HBox>
+   </children>
+</Pane>

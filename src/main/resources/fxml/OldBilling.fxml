@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ralab.pos.OldBillingController">
+    <children>
+        <VBox layoutX="6.0" prefHeight="650.0" prefWidth="1100.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="54.0" prefWidth="1100.0">
+                    <children>
+                        <Text fx:id="title" style="-fx-font:  25px Helvetica; -fx-fill: GREEN;" underline="true">
+                    
+                        </Text>
+                        <!--                        prefHeight="54.0" prefWidth="553.0" -->
+                        
+                                </children>
+                </HBox>
+                <HBox fx:id="hbox2" alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="800.0">
+                    <children>
+                        <Label fx:id="date_label" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="49.0" text="DATE: ">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin>
+                        </Label>
+                  <DatePicker fx:id="date_picker" onAction="#handleDatePickerAction" prefHeight="25.0" prefWidth="117.0" />
+                        <Label fx:id="time_label" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="41.0" text="TIME: ">
+                            <HBox.margin>
+                                <Insets left="3.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="time" prefHeight="25.0" prefWidth="100.0" />
+                        <Label fx:id="bill_no_label" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="74.0" text="BILL NO.: ">
+                            <HBox.margin>
+                                <Insets left="80.0" />
+                            </HBox.margin>
+                        </Label>
+                  <ComboBox fx:id="bill_no_cmb_bx" onAction="#handleBillNoComboBoxAction" prefHeight="25.0" prefWidth="70.0" />
+                  <Label fx:id="bill_no_label1" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="74.0" text="STATUS.: ">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="status" prefHeight="25.0" prefWidth="131.0" />
+                    </children>
+                </HBox>
+                <Separator prefWidth="200.0" />
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="7.0" prefWidth="1100.0">
+                    <children>
+                        <Label prefHeight="39.0" prefWidth="124.0" text="SELECT ITEM" underline="true" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="1100.0">
+                    <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="55.0" text="PCODE: ">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="prod_code_in" prefHeight="25.0" prefWidth="100.0" />
+                        <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="40.0" text="MFG: ">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                        <ComboBox fx:id="mfg" onAction="#handleMfgCoomboBoxAction" prefHeight="25.0" prefWidth="150.0">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+          
+                                </FXCollections>
+                            </items>
+                        </ComboBox>
+                        <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="77.0" text="PRODUCT: ">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                        <ComboBox fx:id="prod" onAction="#handleProdCoomboBoxAction" prefHeight="25.0" prefWidth="254.0">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+          
+                                </FXCollections>
+                            </items>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                        </ComboBox>  
+                        <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="69.0" text="QUANT: " />
+                        <TextField fx:id="quant" prefHeight="25.0" prefWidth="91.0" />
+                  <Button mnemonicParsing="false" onAction="#handleAddButtonAction" prefHeight="25.0" prefWidth="84.0" text="ADD ITEM">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="1100.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="47.0" text="RATE: ">
+                     <HBox.margin>
+                        <Insets left="26.0" />
+                     </HBox.margin>
+                  </Label>
+                        <TextField fx:id="rate" prefHeight="25.0" prefWidth="91.0" />
+                        <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="50.0" text="UNITS: ">
+                            <HBox.margin>
+                                <Insets left="20.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="units" prefHeight="25.0" prefWidth="91.0" />
+                        <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="89.0" text="PROD CODE: ">
+                            <HBox.margin>
+                                <Insets left="74.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="prod_code" prefHeight="25.0" prefWidth="91.0" />
+                    </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+                </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="1100.0">
+               <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="42.0" text="HSN: ">
+                            <HBox.margin>
+                                <Insets left="31.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="hsn_code" prefHeight="25.0" prefWidth="91.0" />
+                        <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="47.0" text="GST: ">
+                            <HBox.margin>
+                                <Insets left="24.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="gst" prefHeight="25.0" prefWidth="91.0" />
+               </children>
+            </HBox>
+                <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="7.0" prefWidth="1100.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="20.0" prefWidth="163.0" text="BILL INFORMATION" underline="true" />
+               </children>
+            </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="1006.0">
+                    <children>
+                        <CheckBox fx:id="igst_chck_bx" mnemonicParsing="false" onAction="#handleIGSTCheckBoxAction" stylesheets="@../styles/Styles.css" text="IGST">
+                            <HBox.margin>
+                                <Insets left="98.0" />
+                            </HBox.margin>
+                        </CheckBox>
+                  <CheckBox fx:id="quote_chck_bx" mnemonicParsing="false" text="Quote">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <Button mnemonicParsing="false" onAction="#handleBilledToButtonAction" prefHeight="25.0" prefWidth="89.0" text="BILLED TO">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+                        <TextField fx:id="phone_num" prefHeight="25.0" prefWidth="154.0" />
+                  <Button mnemonicParsing="false" onAction="#handleShippedToButtonAction" prefHeight="25.0" prefWidth="99.0" text="SHIPPED TO">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <TextField fx:id="phone_num1" prefHeight="25.0" prefWidth="154.0" />
+                  <RadioButton fx:id="tr_radio" mnemonicParsing="false" onAction="#handleTransportRadioButtonAction" text="TRANSPORT INFO">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                    </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="266.0" prefWidth="1100.0">
+                    <children>
+                        <TableView fx:id="billView" prefHeight="320.0" prefWidth="886.0">
+                            <columns>
+                                <TableColumn prefWidth="86.0" text="SNO">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="serialNo" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="82.0" text="MFG">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="mfgName" />
+                                    </cellValueFactory>
+                                </TableColumn> 
+                                <TableColumn prefWidth="284.0" text="PRODUCT">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="prodName" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn minWidth="0.0" prefWidth="57.0" text="PCODE">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="prodCode" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn minWidth="0.0" prefWidth="45.0" text="HSN">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="hsnCode" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn minWidth="0.0" prefWidth="41.0" text="GST">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="gst" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn fx:id="quant_col" prefWidth="63.0" text="QUANT">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="quantValue" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="52.0" text="UNITS">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="unitsValue" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn fx:id="rate_col" prefWidth="65.0" text="RATE">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="rateValue" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="110.0" text="AMOUNT">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="amountValue" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                            </columns>
+                        </TableView>
+                        <Button fx:id="del" mnemonicParsing="false" onAction="#handleDeleteBillItemButtonAction" prefHeight="25.0" prefWidth="109.0" text="DELETE ITEM" />
+                    </children>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="1600.0">
+                    <children>
+                  <MenuButton fx:id="menu_btn" mnemonicParsing="false" onAction="#handleMenuButtonAction" prefHeight="25.0" prefWidth="148.0" text="CHANGE BILL">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="REUSE" />
+                      <MenuItem mnemonicParsing="false" text="CANCEL" />
+                        <MenuItem mnemonicParsing="false" text="MODIFY" />
+                        <MenuItem mnemonicParsing="false" text="NEW" />
+                    </items>
+                  </MenuButton>
+                        <Button mnemonicParsing="false" onAction="#handleCancelButtonAction" prefHeight="25.0" prefWidth="150.0" text="CANCEL">
+                            <HBox.margin>
+                                <Insets left="100.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</Pane>

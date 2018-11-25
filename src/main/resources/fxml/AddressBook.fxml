@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ralab.pos.AddressBookController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="1100.0">
+            <children>
+                <Label prefHeight="34.0" prefWidth="211.0" text="ADDRESS BOOK" underline="true">
+                    <font>
+                        <Font name="Ubuntu Mono" size="25.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox layoutY="37.0" prefHeight="300.0" prefWidth="1100.0">
+            <children>
+                <TableView fx:id="addr_book1" onMouseClicked="#handleRowSelect" prefHeight="200.0" prefWidth="1100.0">
+                    <columns>
+                        <TableColumn prefWidth="64.0" text="SNO">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="sNo" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="0.0" prefWidth="119.0" text="TOWN">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="town" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="117.0" text="PARTY NAME">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="pName" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="116.0" text="ADDRESS1">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="addr1" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="116.0" text="ADDRESS2">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="addr2" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="73.0" text="PHONE">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="phone" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="130.0" text="TIN">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tin" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="78.0" text="CLIMIT">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="cLimit" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="87.0" text="PDC">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="pdc" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="97.0" text="BK">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="bk" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="102.0" text="TPT">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tpt" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutY="343.0" prefHeight="18.0" prefWidth="1100.0">
+            <children>
+                <Label prefHeight="15.0" prefWidth="117.0" text="ADD CUSTOMER" underline="true" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutY="361.0" prefHeight="45.0" prefWidth="1100.0">
+            <children>
+                <Label prefHeight="24.0" prefWidth="51.0" text="TOWN: " />
+                <TextField fx:id="town" prefHeight="25.0" prefWidth="140.0" />
+                <Label prefHeight="24.0" prefWidth="51.0" text="NAME: ">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="pname" prefHeight="25.0" prefWidth="140.0" />
+                <Label prefHeight="24.0" prefWidth="59.0" text="ADDR1: ">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="addr1" prefHeight="25.0" prefWidth="176.0" />
+                <Label prefHeight="24.0" prefWidth="59.0" text="ADDR2: ">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="addr2" prefHeight="25.0" prefWidth="176.0" />
+                <Label prefHeight="24.0" prefWidth="58.0" text="PHONE: ">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="phone" prefHeight="25.0" prefWidth="126.0" />
+            </children>
+            <padding>
+                <Insets left="10.0" />
+            </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutY="406.0" prefHeight="45.0" prefWidth="1100.0">
+            <children>
+                <Label prefHeight="24.0" prefWidth="32.0" text="TIN: ">
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="tin" prefHeight="25.0" prefWidth="140.0" />
+                <Label prefHeight="24.0" prefWidth="55.0" text="CLIMIT: ">
+                    <HBox.margin>
+                        <Insets left="5.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="climit" prefHeight="25.0" prefWidth="140.0" />
+                <Label prefHeight="24.0" prefWidth="37.0" text="PDC: ">
+                    <HBox.margin>
+                        <Insets left="33.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="pdc" prefHeight="25.0" prefWidth="176.0" />
+                <Label prefHeight="24.0" prefWidth="26.0" text="BK: ">
+                    <HBox.margin>
+                        <Insets left="40.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="bk" prefHeight="25.0" prefWidth="176.0" />
+                <Label prefHeight="24.0" prefWidth="33.0" text="TPT: ">
+                    <HBox.margin>
+                        <Insets left="36.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="tpt" prefHeight="25.0" prefWidth="126.0" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutY="451.0" prefHeight="45.0" prefWidth="1100.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#handleAddPartyButtonAction" prefHeight="20.0" prefWidth="164.0" text="ADD">
+                    <font>
+                        <Font name="Ubuntu Mono" size="19.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</Pane>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ralab.pos.CustomerController">
+   <children>
+      <Label alignment="CENTER" layoutX="22.0" layoutY="72.0" prefHeight="32.0" prefWidth="557.0" text="ADD CUSTOMER" underline="true">
+         <font>
+            <Font name="System" size="25.0" />
+         </font>
+      </Label>
+      <Group layoutX="-15.0" opacity="0.68">
+         <children>
+            <HBox layoutX="43.0" layoutY="222.0" prefHeight="44.0" prefWidth="557.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="77.0" text="Phone No.">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="pno" prefHeight="30.0" prefWidth="160.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="43.0" layoutY="169.0" prefHeight="44.0" prefWidth="557.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="77.0" text="        City">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="city" prefHeight="30.0" prefWidth="160.0" promptText="City" />
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="77.0" text="State">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="state" prefHeight="32.0" prefWidth="161.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="41.0" layoutY="111.0" prefHeight="44.0" prefWidth="557.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="77.0" text="Name">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fname" prefHeight="30.0" prefWidth="160.0" promptText="First Name" />
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="77.0" text="Address">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lname" prefHeight="30.0" prefWidth="160.0" promptText="Last Name" />
+               </children>
+            </HBox>
+            <HBox layoutX="43.0" layoutY="283.0" prefHeight="44.0" prefWidth="557.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="77.0" text="GST No.">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gstno" prefHeight="30.0" prefWidth="160.0" />
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="77.0" text="Aadhar No.">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ano" prefHeight="30.0" prefWidth="160.0" />
+               </children>
+            </HBox>
+            <Button layoutX="244.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleAddButtonAction" prefHeight="25.0" prefWidth="145.0" text="Add/Modify">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <HBox layoutX="22.0" layoutY="24.0" prefHeight="32.0" prefWidth="557.0">
+         <children>
+            <TextField fx:id="query_phone" alignment="CENTER" prefHeight="30.0" prefWidth="160.0" promptText="Enter Phone Number">
+               <HBox.margin>
+                  <Insets left="78.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#handleGetButtonAction" prefHeight="28.0" prefWidth="154.0" text="Get Details">
+               <HBox.margin>
+                  <Insets left="78.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</Pane>

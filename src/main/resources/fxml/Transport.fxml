@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ralab.pos.TransportController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="32.0" prefWidth="332.0" text="TRANSPORT DETAILS" underline="true">
+               <font>
+                  <Font name="Ubuntu Mono" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutY="37.0" prefHeight="36.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="130.0" text="TRANSPORT NAME: ">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tr_name" prefHeight="25.0" prefWidth="254.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutY="73.0" prefHeight="36.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="130.0" text="L.R NUMBER: ">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tr_lrno" prefHeight="25.0" prefWidth="153.0" />
+            <Label prefHeight="25.0" prefWidth="86.0" text="L.R DATE: ">
+               <HBox.margin>
+                  <Insets left="24.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tr_lrdate" prefHeight="25.0" prefWidth="139.0">
+               <HBox.margin>
+                  <Insets left="12.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutY="109.0" prefHeight="36.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="130.0" text="WEIGHT: ">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Ubuntu Mono" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tr_weight" prefHeight="25.0" prefWidth="123.0" />
+                  <Label prefHeight="25.0" prefWidth="97.0" text="BOOKING TO: ">
+                     <HBox.margin>
+                        <Insets left="55.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Ubuntu Mono" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tr_bk_to" prefHeight="25.0" prefWidth="123.0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutY="145.0" prefHeight="36.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="130.0" text="CASES: ">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tr_cases" prefHeight="25.0" prefWidth="136.0" />
+            <Label prefHeight="25.0" prefWidth="83.0" text="PVT MARK: ">
+               <HBox.margin>
+                  <Insets left="43.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tr_pvtmark" prefHeight="25.0" prefWidth="141.0">
+               <HBox.margin>
+                  <Insets left="13.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="200.0" prefHeight="36.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleSaveButtonAction" prefHeight="25.0" prefWidth="102.0" text="SAVE">
+               <font>
+                  <Font name="Ubuntu Mono" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</Pane>
