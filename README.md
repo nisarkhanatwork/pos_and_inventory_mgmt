@@ -5,7 +5,9 @@ The following are the points to note:
 1) This is a netbeans project
 2) maven repositories are used
 3) itextpdf is used to generate pdf bills and reports
-4) Utils.java has encryption options, please read the code in Utils.java commented with DISABLED keyword
-5) ...
+4) you have to create databases with the "three" sample sql files (jaasdb.sql, tractor.sql, and tractor_bkp.sql)
+5) for the database passwords please refer to Utils.java
 
 Many changes can be done to improve the code design and depending on the requirements of your customer, the database design and queries can be tuned.
+
+Note: Utils.java has encryption options, please read the code in Utils.java commented code where AES function calls are there
