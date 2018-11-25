@@ -69,12 +69,12 @@ public class Utils {
 
     private static boolean gst_state = true;
     private static boolean green_bill = true;
- private static String companyName = "e1TXncc7b3qW5+XajxOQP+wZzXzR5soLQEENzpsdm6g=";
-private static String addressLine1 = "UrluuIuj7s0MJP6dNeR85yprO+Sk+GQ7QETIPxvbN1s=";
-private static String addressLine2 = "4IzEje9kxL6D9AgfQEn3Dw==";
-private static String phoneNo = "j3jFrIFKiF8dYXF5gCuX21MefmKCYGIaVihG4ZaPErA=";
-private static String gstNo = "ohYxgzE8V+QNQOjF9DFN0g==";
-private static String cityZip = "GUNTUR - 523 001";
+ private static String companyName = "";
+private static String addressLine1 = "";
+private static String addressLine2 = "";
+private static String phoneNo = "";
+private static String gstNo = "";
+private static String cityZip = " -3 001";
     private static String imgLogo = "n.png";
     private static String billDir;
     private static String sampleBillDir;
@@ -100,13 +100,13 @@ private static String cityZip = "GUNTUR - 523 001";
 
     Utils() {
         try {
-            companyName = AES.decrypt(companyName, still_not_opensource);
-            addressLine1 = AES.decrypt(addressLine1, still_not_opensource);
-            addressLine2 = AES.decrypt(addressLine2, still_not_opensource);
-            phoneNo = AES.decrypt(phoneNo, still_not_opensource);
-            gstNo = AES.decrypt(gstNo, still_not_opensource);
-            is = getClass().getResourceAsStream("/misc/dbloc.txt");
-            setServerLoc();
+           // companyName = AES.decrypt(companyName, still_not_opensource);
+          //  addressLine1 = AES.decrypt(addressLine1, still_not_opensource);
+         //   addressLine2 = AES.decrypt(addressLine2, still_not_opensource);
+         //  phoneNo = AES.decrypt(phoneNo, still_not_opensource);
+         //   gstNo = AES.decrypt(gstNo, still_not_opensource);
+          is = getClass().getResourceAsStream("/misc/dbloc.txt");
+           setServerLoc();
 
             green_db_con = DriverManager.getConnection(
                     "jdbc:mysql://" + serverLoc + ":3306/" + getDb1(),
@@ -358,11 +358,11 @@ private static String cityZip = "GUNTUR - 523 001";
                 setRegEmail(rs.getString("userid"));
                 setRegPwd(rs.getString("password"));
 
-                if (key.equals(AES.encrypt(Utils.getCompanyName(),
-                        still_not_opensource))) {
+               // if (key.equals(AES.encrypt(Utils.getCompanyName(),
+               //         still_not_opensource))) {
 
                     return true;
-                }
+            //    }
             }
         } catch (SQLException e) {
             e.printStackTrace();
