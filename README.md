@@ -10,4 +10,6 @@ The following are the points to note:
 
 Many changes can be done to improve the code design and depending on the requirements of your customer, the database design and queries can be tuned.
 
-Note: Utils.java has encryption options, please read the code in Utils.java commented code where AES function calls are there
+Note 1 : Utils.java has encryption options, please read the code in Utils.java commented code where AES function calls are there. Use the AES.java and JavaApplication.java files for encryption or you can use your own.
+
+Note 2: Some part of the code is either copied from the web (which is freely distributed) or from stackoverflow.com snippets. I apologize for not giving proper credit. [Please read the license file too] 
