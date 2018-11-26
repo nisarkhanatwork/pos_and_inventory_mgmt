@@ -8,7 +8,7 @@ The following are the points to note:
 4) you have to create databases with the "three" sample sql files (jaasdb.sql, tractor.sql, and tractor_bkp.sql)
 5) for the database passwords please refer to Utils.java
 
-Many changes can be done to improve the code design and depending on the requirements of your customer, the database design and queries can be tuned.
+Many changes can be done to improve the code design and depending on the requirements, the database design and queries can be tuned.
 
 Note 1 : Utils.java has encryption options, please read the code in Utils.java commented code where AES function calls are there. Use the AES.java and JavaApplication.java files for encryption or you can use your own.
 
