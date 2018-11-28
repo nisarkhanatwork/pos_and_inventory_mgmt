@@ -1,6 +1,5 @@
-# pos_and_inventory_mgmt
+# pos and inventory mgmt
 javaFx/Mysql point of sale and inventory management desktop application software demo for indian market.
-This project gives an idea of how a point of sale and inventory management software can be implemented.
 The following are the points to note:
 1) This is a netbeans project
 2) maven repositories are used
